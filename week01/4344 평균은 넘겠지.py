@@ -8,3 +8,6 @@ for i in range(c):
     avg = sum(scores) / n
 
     print(f'{round((sum([1 for score in scores if score > avg])/n)*100, 3)}%')
+'''
+.3f로 처리해도 반올림을 해줌
+'''
