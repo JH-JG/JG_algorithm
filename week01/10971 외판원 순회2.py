@@ -21,9 +21,10 @@ def tsp(start, now, value, cnt):
 n = int(input())
 a = [list(map(int, input().split())) for _ in range(n)]
 
-cost = 100000000
+cost = 10e9
 visited = [0] * n
 
+# 원순열이라 최소값은 출발지가 어디라도 동일함 즉, 반복이 필요없다
 for i in range(n):
     visited[i] = True
     tsp(i, i, 0, 1) # 시작
