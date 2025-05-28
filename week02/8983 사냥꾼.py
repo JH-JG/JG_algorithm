@@ -1,9 +1,3 @@
-'''
-사대의 수 m
-동물의 수 n
-사정거리 l
-m개의 x 좌표값
-'''
 import sys
 input = sys.stdin.readline
 
@@ -30,7 +24,6 @@ def can_hunt(x, y):
             e = mid - 1
         
     return False
-
 
 for ani_x, ani_y in animal_pos:
     if can_hunt(ani_x, ani_y):
